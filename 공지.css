@@ -1,0 +1,47 @@
+.notice_item_head {
+    width:1200;
+    height:150;
+    margin:auto;
+    border-bottom:1px inset rgba(0, 0, 0, 0.5);
+}
+.notice_item_head_font {
+    font-size:4em;
+    line-height:3em;
+    position: relative;
+    left:200;
+    color:purple;
+}
+.notice_item_main {
+    width:1000;
+    margin:auto;
+    margin-top:50;
+    margin-bottom:50;
+    text-align:center;
+    position: relative;
+}
+.notice_item_detail_table {
+    width:1000;
+    text-align:center;
+    border-top:1px inset rgba(0, 0, 0, 0.5);
+    border-collapse:collapse;
+}
+.notice_item_detail_table td {
+    border-bottom:1px inset rgba(0, 0, 0, 0.5);
+    height:40;
+}
+.notice_item_bottom {
+    border-top:1px inset rgba(0, 0, 0, 0.5);
+    height:60;
+    width:1000;
+}
+.notice_item_golist {
+    position: relative;
+    top:50%;
+    transform: translate(0,-50%);
+    width:80;
+    height:30;
+    background:pink
+}
+.under_menu {
+    border-top:1px inset rgba(0, 0, 0, 0.5);
+}

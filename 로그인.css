@@ -1,0 +1,69 @@
+.login_head {
+    width:1200;
+    height:150;
+    margin:auto;
+    border-bottom:1px inset rgba(0, 0, 0, 0.5);
+}
+.login_head_font {
+    font-size:4em;
+    line-height:3em;
+    position: relative;
+    left:200;
+    color:purple;
+}
+.login_main {
+    height:304;
+    width:1200;
+    margin:auto;
+    padding-top:50;
+    padding-bottom:50;
+    text-align:center;
+}
+.login_group {
+    width:400;
+    height:300;
+    display:inline-block;
+}
+.login_table {
+    width:400;
+    height:120;
+    padding:0;
+}
+.ad_box {
+    display:inline-block;
+    width:400;
+    height:300;
+    background:pink;
+    overflow: hidden;
+}
+.ad_img {
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+}
+.ad_box2 {
+    display:inline-block;
+    width:400;
+    height:169;
+    background:pink;
+    overflow: hidden;
+}
+.ad_img2 {
+    position: relative;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.login_button {
+    width:100;
+    height:100;
+    background:purple;
+    font-size:1.5em;
+    color:plum;
+}
+.find_account a {
+    text-decoration:none;
+    color:plum;
+}
+.under_menu {
+    border-top:1px inset rgba(0, 0, 0, 0.5);
+}

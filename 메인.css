@@ -1,0 +1,230 @@
+.banner_background {
+    background:#f4c3b4;
+    transition:all linear 0.5s;
+}
+.img_banner {
+    width:1200;
+    height:450;
+    margin:auto;
+    position:relative;
+}
+.img_banner a {
+    text-decoration:none;
+    color:black;
+}
+.slide_img {
+    width:600;
+    height:400;
+    background:gray;
+    z-index:1;
+    transition:all linear 0.5s;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    margin:auto;
+}
+.slide_img2 {
+    width:550;
+    height:350;
+    background:orange;
+    z-index:0;
+    transition:all linear 0.5s;
+    position:absolute;
+    left:35%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    margin:auto;
+}
+.slide_img3 {
+    width:550;
+    height:350;
+    background:orange;
+    z-index:0;
+    transition:all linear 0.5s;
+    position:absolute;
+    left:65%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    margin:auto;
+}
+.prev {
+    width:50;
+    height:50;
+    position:absolute;
+    top:50%;
+    left:7%;
+    z-index:2;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0);
+    border:0;
+}
+.next {
+    width:50;
+    height:50;
+    position:absolute;
+    top:50%;
+    left:93%;
+    z-index:2;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0);
+    border:0;
+}
+.content {
+    width:1200;
+    margin:auto;
+    border-bottom:1px inset rgba(0, 0, 0, 0.5);
+}
+.s_item_list {
+    width:1200;
+    height:450;
+    position:relative;
+    margin:auto;
+}
+.s_item_list a {
+    text-decoration:none;
+    color:black;
+}
+.s_item {
+    display: inline-block;
+    position:absolute;
+    transform:translate(0,-50%);
+    top:50%;
+    left:25;
+    width:250;
+    height:350;
+    z-index:1;
+    overflow: hidden;
+    transition:all linear 0.1s;
+}
+.s_item img {
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+}
+.s_item:hover {
+    width:450;
+    z-index:1;
+    transition:all linear 0.2s;
+}
+.s_item_large {
+    display: inline-block;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:725;
+    width:900;
+    height:350;
+    z-index:0;
+    background:gray;
+    transition:all linear 0.1s;
+}
+.s_item_large:hover {
+    width:950;
+    height:375;
+    z-index:2;
+    background:orange;
+    transition:all linear 0.2s;
+}
+.item_list {
+    width:1200;
+    height:350;
+    position:relative;
+    margin:auto;
+}
+.item_list a {
+    text-decoration:none;
+    color:black;
+    cursor: pointer;
+}
+.more_item {
+    position:relative;
+    width:1200;
+    height:50;
+    margin:auto;
+    border-bottom:1px inset rgba(0, 0, 0, 0.5);
+}
+.more_item a {
+    position:absolute;
+    left:95%;
+    top:50%;
+    transform:translate(0, -50%);
+    color:purple;
+    font-weight:bold;
+    text-decoration:none;
+}
+.more_item span {
+    position:absolute;
+    left:1%;
+    top:50%;
+    transform:translate(0, -50%);
+    color:purple;
+    font-weight:bold;
+    text-decoration:none;
+}
+.item {
+    display: inline-block;
+    width:200;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    height:260;
+    transition:all linear 0.1s;
+}.item:hover {
+    background:rgba(255, 126, 148, 0.603);
+}
+.item_word {
+    width:200;
+    height:60;
+}
+.item img {
+    position: relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.s_item2_list {
+    width:1200;
+    height:600;
+    position:relative;
+    margin:auto;
+}
+.s_item2_large {
+    width:1150;
+    height:550;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+}
+.s_item2_sort {
+    width:1150;
+    position:absolute;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    transform:translate(-50%,-50%);
+    top:54%;
+    left:50%;
+}
+.s_item2_sort a {
+    text-decoration:none;
+    color:black;
+    cursor: pointer;
+}
+.s_item2 {
+    width:200;
+    height:360;
+    display:inline-block;
+    background:white;
+    transition:all linear 0.2s;
+}
+.s_item2:hover {
+    background:rgba(255, 126, 148, 0.603);
+}
+.sale {
+    position: relative;
+    left:950;
+    top:540;
+    text-decoration:none;
+    cursor: pointer;
+}

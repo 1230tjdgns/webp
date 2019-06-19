@@ -1,0 +1,94 @@
+.bukkit_head {
+    width:1200;
+    height:150;
+    margin:auto;
+    border-bottom:1px inset rgba(0, 0, 0, 0.5);
+}
+.bukkit_head_font {
+    font-size:4em;
+    line-height:3em;
+    position: relative;
+    left:200;
+    color:purple;
+}
+.bukkit_main {
+    width:1200;
+    margin:auto;
+}
+.bukkit_table {
+    width:1200;
+    border-collapse:collapse;
+    text-align: center;
+    border-top:1px inset rgba(0, 0, 0, 0.5);
+    margin-top:50;
+    margin-bottom:50;
+}
+.bukkit_table td {
+    border-bottom:1px inset rgba(0, 0, 0, 0.5);
+    padding:0;
+}
+.bukkit_table .tag td {
+    height:50;
+}
+.cell_no {
+    width:100;
+}
+.cell_pro {
+    width:300;
+}
+.cell_name {
+    width:200;
+}
+.cell_price {
+    width:200;
+}
+.cell_count {
+    width:150;
+}
+.select {
+    width:250;
+}
+.item td {
+    height:150;
+}
+.bukkit_bottom {
+    height:150;
+    border-top:1px inset rgba(0, 0, 0, 0.5);
+    border-bottom:1px inset rgba(0, 0, 0, 0.5);
+    margin-bottom:50;
+    position: relative;
+}
+.bukkit_bottom_font {
+    position: absolute;
+    top:50%;
+    left:52%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.bukkit_bottom_price {
+    position: absolute;
+    top:50%;
+    left:65%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.buy_button {
+    display: inline-block;
+    width:150;
+    height:50;
+    position: absolute;
+    top:50%;
+    left:85%;
+    transform: translate(-50%,-50%);
+    background:plum;
+    font-size:1.5em;
+    color:purple;
+    font-weight: bold;
+}
+.under_menu_word {
+    border-top:1px inset rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,63 @@
+.regi_head {
+    width:1200;
+    height:150;
+    margin:auto;
+    border-bottom:1px inset rgba(0, 0, 0, 0.5);
+}
+.regi_head_font {
+    font-size:4em;
+    line-height:3em;
+    position: relative;
+    left:200;
+    color:purple;
+}
+.regi_proc_font_group {
+    display: inline-block;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.regi_proc {
+    height:70;
+    width:1200;
+    margin:auto;
+    border-bottom:1px inset rgba(0, 0, 0, 0.5);
+}
+.regi_proc_font {
+    color:plum;
+    font-size:2em;
+    display:inline-block;
+}
+.regi_main {
+    height:770;
+    width:1200;
+    margin:auto;
+    padding-top:50;
+    padding-bottom:50;
+}
+.t_style {
+    border-collapse: collapse;
+    border-bottom:1px inset rgba(0, 0, 0, 0.5);
+    width:800;
+    height:700;
+}
+td {
+    border-top:1px inset rgba(0, 0, 0, 0.5);
+}
+.regi_main_under {
+    width:800;
+    margin:auto;
+    margin-top:10;
+    padding-top:10;
+    text-align:right;
+}
+.regi_next {
+    width:140;
+    height:50;
+    font-size:1.5em;
+    background:pink
+}
+.under_menu {
+    border-top:1px inset rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,50 @@
+.notice_head {
+    width:1200;
+    height:150;
+    margin:auto;
+    border-bottom:1px inset rgba(0, 0, 0, 0.5);
+}
+.notice_head_font {
+    font-size:4em;
+    line-height:3em;
+    position: relative;
+    left:200;
+    color:purple;
+}
+.notice_main {
+    width:1200;
+    margin:auto;
+    margin-top:50;
+    margin-bottom:50;
+}
+.notice_list_table {
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+    width:1000;
+    border-collapse: collapse;
+    border-top:1px inset rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.notice_list_table td {
+    border-bottom:1px inset rgba(0, 0, 0, 0.5);
+    height:40;
+}
+.notice_item {
+    background:white;
+}
+.notice_item:hover {
+    background:plum;
+}
+.notice_item_no{
+    width:50;
+}
+.notice_item_title {
+    width:750;
+}
+.item_font {
+    font-weight: bold;
+}
+.under_menu {
+    border-top:1px inset rgba(0, 0, 0, 0.5);
+}

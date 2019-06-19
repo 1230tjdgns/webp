@@ -1,0 +1,609 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="공용.css">
+    <link rel="stylesheet" href="메인.css">
+    <style></style>
+    <title>삐얔</title>
+    <script>
+        function showmypage() {
+            window.open("마이페이지.html", "마이페이지", "width=600, height=760, left=500, top=300");
+        }
+    </script>
+</head>
+
+<body>
+    <aside id="ctg">
+        <div id="cate" class="category_menu">
+            <span style="font-size:38px; font-weight:bold;color:purple;">Category</span>
+            <button class="category_button"
+                style="background:plum;position:absolute; left:100%; transform: translate(-100%,0);"
+                onclick="category_open()">
+                <img src="공용이미지/닫기.png" width=50% height="50%">
+            </button>
+            <button class="ctg_button" onclick="list_open('ctgb1')">
+                FACE
+            </button>
+            <div class="ctg_item_group" id="ctgb1">
+                <a onclick="go_list('FOUNDATION')">
+                    <div class="ctg_itme">
+                        FOUNDATION&CUSHION
+                    </div>
+                </a>
+                <a onclick="go_list('CONCEALER')">
+                    <div class="ctg_itme" style="border-bottom:1px solid purple;border-top:1px solid purple;">
+                        CONCEALER
+                    </div>
+                </a>
+                <a onclick="go_list('POWDER')">
+                    <div class="ctg_itme">
+                        POWDER&PACT
+                    </div>
+                </a>
+            </div>
+            <button class="ctg_button" onclick="list_open('ctgb2')">
+                EYE
+            </button>
+            <div class="ctg_item_group" id="ctgb2">
+                <a onclick="go_list('EYELINER')">
+                    <div class="ctg_itme">
+                        EYELINER
+                    </div>
+                </a>
+                <a onclick="go_list('EYESHADOW')">
+                    <div class="ctg_itme" style="border-bottom:1px solid purple;border-top:1px solid purple;">
+                        EYESHADOW
+                    </div>
+                </a>
+                <a onclick="go_list('MASCARA')">
+                    <div class="ctg_itme">
+                        MASCARA
+                    </div>
+                </a>
+            </div>
+            <button class="ctg_button" onclick="list_open('ctgb3')">
+                LIP
+            </button>
+            <div class="ctg_item_group" id="ctgb3">
+                <a onclick="go_list('LIPSTICK')">
+                    <div class="ctg_itme">
+                        LIPSTICK
+                    </div>
+                </a>
+                <a onclick="go_list('TINT')">
+                    <div class="ctg_itme" style="border-bottom:1px solid purple;border-top:1px solid purple;">
+                        TINT
+                    </div>
+                </a>
+                <a onclick="go_list('LIPCARE')">
+                    <div class="ctg_itme">
+                        LIPCARE
+                    </div>
+                </a>
+            </div>
+            <button class="ctg_button" onclick="list_open('ctgb4')">
+                CHEEK
+            </button>
+            <div class="ctg_item_group" id="ctgb4">
+                <a onclick="go_list('BLUSH')">
+                    <div class="ctg_itme">
+                        BLUSH
+                    </div>
+                </a>
+                <a onclick="go_list('CONTOUR')">
+                    <div class="ctg_itme" style="border-bottom:1px solid purple;border-top:1px solid purple;">
+                        CONTOUR
+                    </div>
+                </a>
+                <a onclick="go_list('HIGHLIGHT')">
+                    <div class="ctg_itme">
+                        HIGHLIGHT
+                    </div>
+                </a>
+            </div>
+            <button class="ctg_button" onclick="list_open('ctgb5')">
+                SERVICE
+            </button>
+            <div class="ctg_item_group" id="ctgb5">
+                <a href="회사소개.html">
+                    <div class="ctg_itme">
+                        회사소개
+                    </div>
+                </a>
+                <a href="오시는 길.html">
+                    <div class="ctg_itme" style="border-bottom:1px solid purple;border-top:1px solid purple;">
+                        오시는 길
+                    </div>
+                </a>
+                <a href="공지사항.html">
+                    <div class="ctg_itme">
+                        공지사항
+                    </div>
+                </a>
+            </div>
+        </div>
+        <script src="카테고리.js"></script>
+    </aside>
+    <aside id="my_page">
+        <div class="my_page_back" onclick="open_my_page();">
+        </div>
+        <div class="my_page_box">
+            <center>
+                <br>
+                <h1 style="font-family: Georgia, 'Times New Roman', Times, serif">MY PAGE</h1>
+                <br>
+                <br>
+                <br>
+                <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif">회원님의 구매등급은 [FAMILY] 입니다.</h3>
+                <div style="width:80%; height:10%; background: white;">
+                    <table style="position: relative; top:18px;">
+                        <tr>
+                            <td width=27%>
+                                POINT
+                            </td>
+                            <td width=27%>
+                                1700원
+                            </td>
+                            <td width=27%>
+                                COUPON
+                            </td>
+                            <td width=27%>
+                                <a href="" style="text-decoration:none;color:black;">
+                                    쿠폰확인
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <table class="my_page_list_font">
+                    <tr>
+                        <td width=70% height=70>
+                            <a href="" onmouseover="go_check(this)" onmouseout="go_uncheck(this)">
+                                <input class="mp_check" type="checkbox"
+                                    onclick="if(this.checked == true){this.checked = false}else{this.checked = true}">주문
+                                내역
+                            </a>
+                        </td>
+                        <td>
+                            <a href="" onmouseover="go_check(this)" onmouseout="go_uncheck(this)">
+                                <input class="mp_check" type="checkbox"
+                                    onclick="if(this.checked == true){this.checked = false}else{this.checked = true}">회원
+                                정보
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=70% height=70>
+                            <a href="" onmouseover="go_check(this)" onmouseout="go_uncheck(this)">
+                                <input class="mp_check" type="checkbox"
+                                    onclick="if(this.checked == true){this.checked = false}else{this.checked = true}">관심상품
+                            </a>
+                        </td>
+                        <td>
+                            <a href="" onmouseover="go_check(this)" onmouseout="go_uncheck(this)">
+                                <input class="mp_check" type="checkbox"
+                                    onclick="if(this.checked == true){this.checked = false}else{this.checked = true}">적립금
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=70% height=70>
+                            <a href="" onmouseover="go_check(this)" onmouseout="go_uncheck(this)">
+                                <input class="mp_check" type="checkbox"
+                                    onclick="if(this.checked == true){this.checked = false}else{this.checked = true}">쿠폰
+                            </a>
+                        </td>
+                        <td>
+                            <a href="" onmouseover="go_check(this)" onmouseout="go_uncheck(this)">
+                                <input class="mp_check" type="checkbox"
+                                    onclick="if(this.checked == true){this.checked = false}else{this.checked = true}">예치금
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=70% height=70>
+                            <a href="" onmouseover="go_check(this)" onmouseout="go_uncheck(this)">
+                                <input class="mp_check" type="checkbox"
+                                    onclick="if(this.checked == true){this.checked = false}else{this.checked = true}">내가쓴글
+                            </a>
+                        </td>
+                        <td>
+                            <a href="" onmouseover="go_check(this)" onmouseout="go_uncheck(this)">
+                                <input class="mp_check" type="checkbox"
+                                    onclick="if(this.checked == true){this.checked = false}else{this.checked = true}">VIP
+                                게시판
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <a style="text-decoration:none; color: black;" href="">
+                    <h4 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">New Member
+                        Benfit >></h4>
+                </a>
+            </center>
+        </div>
+        <script src="마이페이지.js"></script>
+        <script src="마이페이지_체크.js"></script>
+    </aside>
+    <header>
+        <div class="small_bar_back">
+            <div class="small_bar">
+                <ul class="small_bar_word">
+                    <li><a href="회원가입.html" target=_self>회원가입</a></li>
+                    <li>&nbsp|&nbsp</li>
+                    <li id="login_of_my"><a href="로그인.html" target=_self>로그인</a></li>
+                    <li>&nbsp|&nbsp</li>
+                    <li><span onclick="open_my_page()" style="cursor:hand;">마이페이지</span></li>
+                    <li>&nbsp|&nbsp</li>
+                    <li><a href="장바구니.html">장바구니</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="logo_back">
+            <a href="메인.html">
+                <div class="logo">
+                    <img src="공용이미지/삐아로고.jpg" height="100%">
+                </div>
+            </a>
+        </div>
+        <div class="head_menu_back">
+            <div class="head_menu">
+                <button class="category_button" onclick="category_open()">
+                    <img src="공용이미지/카테고리.png" width=100% height=100%>
+                </button>
+                <div class="button_sort">
+                    <ul>
+                        <li><a>FACE</a>
+                            <ul>
+                                <li style="border-left:1px solid purple;border-right:1px solid purple;"><a
+                                        onclick="go_list('FOUNDATION')">FOUNDATION&CUSHION</a></li>
+                                <li style="border-left:1px solid purple;border-right:1px solid purple;"><a
+                                        onclick="go_list('CONCEALER')">CONCEALER</a></li>
+                                <li style="border:1px solid purple;border-top:0;"><a
+                                        onclick="go_list('POWDER')">POWDER&PACT</a></li>
+                            </ul>
+                        </li>
+                        <li><a>EYE</a>
+                            <ul>
+                                <li style="border-left:1px solid purple;border-right:1px solid purple;"><a
+                                        onclick="go_list('EYELINER')">EYELINER</a></li>
+                                <li style="border-left:1px solid purple;border-right:1px solid purple;"><a
+                                        onclick="go_list('EYESHADOW')">EYESHADOW</a></li>
+                                <li style="border:1px solid purple;border-top:0;"><a
+                                        onclick="go_list('MASCARA')">MASCARA</a></li>
+                            </ul>
+                        </li>
+                        <li><a>LIP</a>
+                            <ul>
+                                <li style="border-left:1px solid purple;border-right:1px solid purple;"><a
+                                        onclick="go_list('LIPSTICK')">LIPSTICK</a></li>
+                                <li style="border-left:1px solid purple;border-right:1px solid purple;"><a
+                                        onclick="go_list('TINT')">TINT</a></li>
+                                <li style="border:1px solid purple;border-top:0;"><a
+                                        onclick="go_list('LIPCARE')">LIPCARE</a></li>
+                            </ul>
+                        </li>
+                        <li><a>CHEEK</a>
+                            <ul>
+                                <li style="border-left:1px solid purple;border-right:1px solid purple;"><a
+                                        onclick="go_list('BLUSH')">BLUSH</a></li>
+                                <li style="border-left:1px solid purple;border-right:1px solid purple;"><a
+                                        onclick="go_list('CONTOUR')">CONTOUR</a></li>
+                                <li style="border:1px solid purple;border-top:0;"><a
+                                        onclick="go_list('HIGHLIGHT')">HIGHLIGHT</a></li>
+                            </ul>
+                        </li>
+                        <li><a>SERVICE</a>
+                            <ul>
+                                <li style="border-left:1px solid purple;border-right:1px solid purple;"><a
+                                        href="회사소개.html">회사소개</a></li>
+                                <li style="border-left:1px solid purple;border-right:1px solid purple;"><a
+                                        href="오시는 길.html">오시는 길</a></li>
+                                <li style="border:1px solid purple;border-top:0;"><a href="공지사항.html">공지사항</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <script>
+                        function go_list(l) {
+                            location.href = "제품리스트.html?" + l
+                        }
+                    </script>
+                </div>
+                <div class="search_box">
+                    <form method="get" action="http://www.google.co.kr/search" target="_blank">
+                        <input type="text" name=q value="">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article>
+        <section id="banner_id" class="banner_background">
+            <div class="img_banner">
+                <button class="prev" onclick="slide_prev()">
+                    <img src="메인이미지/이전.png" width=100% height=100%>
+                </button>
+                <button class="next" onclick="slide_next()">
+                    <img src="메인이미지/다음.png" width=100% height=100% style="border:0;">
+                </button>
+                <a href="http://www.bbia.co.kr/index.html" target = _blank;>
+                    <div id="img1" class="slide_img">
+                        <img src="메인이미지/메인사진.jpg" width=100% height=100%>
+                    </div>
+                </a>
+                <a href="http://www.eglips.com/" target = _blank;>
+                    <div id="img2" class="slide_img2">
+                        <img src="메인이미지/메인사진2.jpg" width=100% height=100%>
+                    </div>
+                </a>
+                <a href="https://www.chanel.com/ko_KR/" target = _blank;>
+                    <div id="img3" class="slide_img3">
+                        <img src="메인이미지/메인사진3.jpg" width=100% height=100%>
+                    </div>
+                </a>
+            </div>
+            <script src="슬라이드.js"></script>
+        </section>
+        <section>
+            <div id="special1" class="content">
+                <div class="more_item" style="height:100;">
+                    <div class="s_item_banner">
+                        EVENT
+                    </div>
+                </div>
+                <div class="s_item_list">
+                    <a href="공지1.html">
+                        <div class="s_item">
+                            <img src="메인이미지/이벤트1.png" height="100%">
+                        </div>
+                    </a>
+                    <a href="공지1.html">
+                        <div class="s_item_large">
+                            <img src=메인이미지/이벤트2.png width=100% height=100%>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="first" class="content">
+                <div class="more_item">
+                    <span>
+                        NEW
+                    </span>
+                    <a style = "cursor:pointer" onclick = "location.href = '제품리스트.html?NEW'">
+                        +MORE
+                    </a>
+                </div>
+                <div class="item_list">
+                    <a onclick = "location.href = '상품페이지.html?'+'N1'+'!'+'NEW'">
+                        <div class="item" style="left:150;">
+                            <div style="height:200; width:200;">
+                                <img src="메인이미지/뉴1.png" height=100%>
+                            </div>
+                            <div class="item_word"><b>벨벳 립 틴트</b>
+                                <hr>60.000원</div>
+                        </div>
+                    </a>
+                    <a onclick = "location.href = '상품페이지.html?'+'N2'+'!'+'NEW'">
+                        <div class="item" style="left:450;">
+                            <div style="height:200; width:200;">
+                                <img src="메인이미지/뉴2.png" height=100%>
+                            </div>
+                            <div class="item_word"><b>펜 아이라이너</b>
+                                <hr>45.000원</div>
+                        </div>
+                    </a>
+                    <a onclick = "location.href = '상품페이지.html?'+'N3'+'!'+'NEW'">
+                        <div class="item" style="left:750;">
+                            <div style="height:200; width:200;">
+                                <img src="메인이미지/뉴3.png" height=100%>
+                            </div>
+                            <div class="item_word"><b>글리터 아이라이너</b>
+                                <hr>33.000원</div>
+                        </div>
+                    </a>
+                    <a onclick = "location.href = '상품페이지.html?'+'N4'+'!'+'NEW'">
+                        <div class="item" style="left:1050;">
+                            <div style="height:200; width:200;">
+                                <img src="메인이미지/뉴4.png" width=100%>
+                            </div>
+                            <div class="item_word"><b>립스틱</b>
+                                <hr>65.000원</div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div id="second" class="content">
+                <div class="more_item">
+                    <span>
+                        BEST
+                    </span>
+                    <a style = "cursor:pointer" onclick = "location.href = '제품리스트.html?BEST'">
+                        +MORE
+                    </a>
+                </div>
+                <div class="item_list">
+                    <a onclick = "location.href = '상품페이지.html?'+'B1'+'!'+'BEST'">
+                        <div class="item" style="left:150;">
+                            <div style="height:200; width:200;">
+                                <img src="메인이미지/베스트1.png" width=100%>
+                            </div>
+                            <div class="item_word"><b>섀도우</b>
+                                <hr>45.000원</div>
+                        </div>
+                    </a>
+                    <a onclick = "location.href = '상품페이지.html?'+'B2'+'!'+'BEST'">
+                        <div class="item" style="left:450;">
+                            <div style="height:200; width:200;">
+                                <img src="메인이미지/베스트2.png" height=100%>
+                            </div>
+                            <div class="item_word"><b>벨벳 핏틴트</b>
+                                <hr>60.000원</div>
+                        </div>
+                    </a>
+                    <a onclick = "location.href = '상품페이지.html?'+'B3'+'!'+'BEST'">
+                        <div class="item" style="left:750;">
+                            <div style="height:200; width:200;">
+                                <img src="메인이미지/베스트3.png" width=100%>
+                            </div>
+                            <div class="item_word"><b>파우더 팩트</b>
+                                <hr>33.000원</div>
+                        </div>
+                    </a>
+                    <a onclick = "location.href = '상품페이지.html?'+'B4'+'!'+'BEST'">
+                        <div class="item" style="left:1050;">
+                            <div style="height:200; width:200;">
+                                <img src="메인이미지/베스트4.png" height=100%>
+                            </div>
+                            <div class="item_word"><b>오토젤 아이라이너</b>
+                                <hr>81.000원</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="special2" class="content">
+                <div class="s_item2_list">
+                    <span class="s_item2_word">
+                        SALE
+                    </span>
+                    <div align=center class="s_item2_sort">
+                        <a onclick = "location.href = '상품페이지.html?'+'S1'+'!'+'SALE'">
+                            <div class="s_item2" align=left>
+                                <div style="text-align:center;height:300;">
+                                    <img src="메인이미지/세일1.png" height=100%></div>
+                                <div>
+                                    <b>루쥬 볼립떼 샤인</b>
+                                    <hr>
+                                    <span style="text-decoration:line-through"> 44.000원</span>
+                                    -> <span style="color:red;">
+                                        22.000원 </span>
+
+                                </div>
+                            </div>
+                        </a>
+                        <a onclick = "location.href = '상품페이지.html?'+'S2'+'!'+'SALE'">
+                            <div class="s_item2" align=left>
+                                <div style="text-align:center;height:300;">
+                                    <img src="메인이미지/세일2.png" height=100%></div>
+                                <div>
+                                    <b>볼립떼 플럼프</b>
+                                    <hr>
+                                    <span style="text-decoration:line-through"> 40.000원</span>
+                                    -> <span style=" color:red;">
+                                        20.000원 </span>
+
+                                </div>
+                            </div>
+                        </a>
+                        <a onclick = "location.href = '상품페이지.html?'+'S3'+'!'+'SALE'">
+                            <div class="s_item2" align=left>
+                                <div style="text-align:center;height:300;">
+                                    <img src="메인이미지/세일3.png" height=100%></div>
+                                <div>
+                                    <b>루쥬 쀠르 꾸띄르</b>
+                                    <hr>
+                                    <span style="text-decoration:line-through"> 50.000원</span>
+                                    -> <span style="color:red;">
+                                        25.000원 </span>
+
+                                </div>
+                            </div>
+                        </a>
+                        <a onclick = "location.href = '상품페이지.html?'+'S4'+'!'+'SALE'">
+                            <div class="s_item2" align=left>
+                                <div style="text-align:center;height:300;">
+                                    <img src="메인이미지/세일4.png" height=100%></div>
+                                <div>
+                                    <b>루쥬 쀠르 꾸띄르 더 슬림</b>
+                                    <hr>
+                                    <span style="text-decoration:line-through"> 45.000원</span>
+                                    -> <span style="color:red;">
+                                        22.500원 </span>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="sale" onclick = "location.href = '제품리스트.html?SALE'"> <span> +GO TO LIP SALE PRODUCT</span> </a>
+                </div>
+            </div>
+            <div class="under_menu">
+                <div class="under_menu_word">
+                    <ul>
+                        <li onclick="open_my_page()" style="cursor:hand">마이페이지</li>
+                        <li>&nbsp|&nbsp</li>
+                        <a href="장바구니.html">
+                            <li>장바구니</li>
+                        </a>
+                        <li>&nbsp|&nbsp</li>
+                        <a href="오시는 길.html">
+                            <li>매장안내</li>
+                        </a>
+                        <li>&nbsp|&nbsp</li>
+                        <a href="약관2.html">
+                            <li>개인정보처리방침</li>
+                        </a>
+                        <li>&nbsp|&nbsp</li>
+                        <a href="약관1.html">
+                            <li>이용약관</li>
+                        </a>
+                        <li>&nbsp|&nbsp</li>
+                        <a href="">
+                            <li>content us</li>
+                        </a>
+                        <li>&nbsp|&nbsp</li>
+                        <a href="">
+                            <li>사이트맵</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="https://www.facebook.com/stylenanda11" target = _blank;>
+                            <li>
+                                <div style="display:inline-block;width:50;height:50;background:white;">
+                                    <img src="공용이미지/페북.png" width=100% height=100%>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.instagram.com/stylenanda_korea/" target = _blank;>
+                            <li>
+                                <div style="display:inline-block;width:50;height:50;background:white;">
+                                    <img src="공용이미지/인스타.png" width=100% height=100%>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.youtube.com/user/stylenandacom" target = _blank;>
+                            <li>
+                                <div style="display:inline-block;width:50;height:50;background:white;">
+                                    <img src="공용이미지/유튜브.png" width=100% height=100%>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="http://blog.naver.com/toros11" target = _blank;>
+                            <li>
+                                <div style="display:inline-block;width:50;height:50;background:lime;">
+                                    <img src="공용이미지/블로그.jpg" width=100% height=100%>
+                                </div>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </article>
+    <footer>
+        <div class="web_info">
+            <div class="under_menu_word">
+                <br>
+                사업자정보 : 990308 <br>
+                사이트만든사람 : 1889016 박서현, 1889033 이성훈, 1889045 장영수 <br>
+                도움 : 박두영 교수님
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
